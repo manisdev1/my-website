@@ -1,0 +1,124 @@
+*{margin:0;
+  padding:0;
+  box-sizing: border-box;
+  fo
+}
+
+#banner {
+    height: 350px; 
+    overflow: hidden;
+}
+
+  #banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+}  
+
+/* Make all navbar links and icons white */
+.navbar .nav-link {
+  color: #ffffff ;
+}
+
+/* Optional: change color on hover or active */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: #ffc107; /* Yellow highlight on hover */
+}
+
+/* Make Font Awesome cart icon white too */
+.navbar .nav-link i.fas.fa-shopping-cart {
+  color: #ffffff;
+}
+
+
+.card-img-top {
+  height: 200px; /* or any height you prefer */
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Promo Overlay Styles */
+.promo-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark background */
+  padding: 20px 40px;
+  border-radius: 8px;
+  animation: fadeSlideUp 1.5s ease-out;
+  z-index: 10;
+}
+
+/* Promo Text Styling */
+.promo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Responsive tweak for mobile */
+@media (max-width: 576px) {
+  .promo-text {
+    font-size: 1.4rem;
+  }
+
+  .promo-overlay {
+    padding: 12px 20px;
+  }
+}
+
+/*Footer*/
+#contact p {
+  margin-bottom: 0.5rem;
+}
+
+#contact .container {
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  #contact .container {
+    padding-left: 2rem;
+  }
+}
+
+/* Newsletter Subscribe Button Hover */
+.newsletter-btn {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.newsletter-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Social media icons hover */
+#contact a i:hover {
+  color: #5f5f5f; /* Bootstrap's warning color */
+  transition: color 0.3s ease-in-out;
+}
+
